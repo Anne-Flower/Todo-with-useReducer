@@ -1,7 +1,7 @@
 import { Action } from "../../src/types/actionType";
 import { Todo } from "../../src/types/todoType";
 
-export type State = Todo[];
+export type State = Todo[]; //would be more efficient to do it with a Map
 
 export function reducer(state: State, action: Action): State {
   switch (action.type) {
