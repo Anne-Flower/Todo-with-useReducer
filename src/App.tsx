@@ -19,12 +19,14 @@ function App() {
         <h1>
           <strong>TODO LIST</strong>
         </h1>
+        <span className="task">
         <input
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Enter a task here"
         />
         <button onClick={addText}> Add </button>
+        </span>
 
         <ul>
           {state.map((todo) => (
